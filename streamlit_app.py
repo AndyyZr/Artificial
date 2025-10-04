@@ -3,10 +3,9 @@ from gpt4all import GPT4All
 
 st.title("🤖 My AI Helper")
 
-# Load GPT4All model (runs locally)
 @st.cache_resource
 def load_model():
-    return GPT4All("ggml-gpt4all-j-v1.bin")  # free GPT4All model
+    return GPT4All("./ggml-gpt4all-j-v1.bin")  # path to uploaded model in repo
 
 model = load_model()
 
